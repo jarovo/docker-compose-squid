@@ -7,6 +7,6 @@ services:
     ports:
       - "3128:3128"
     volumes:
-      - ./config/squid.conf:/etc/squid/squid.conf
-      - ./passwd:/etc/squid/passwd
+      - ./config/squid.conf:/etc/squid/squid.conf:Z
+      - ./passwd:/etc/squid/passwd:Z
     restart: unless-stopped

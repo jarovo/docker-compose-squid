@@ -13,6 +13,5 @@ Running Squid Proxy in internet without authentication is very dangerous and can
 
 Run [without authentication](/without_authentication/readme.md)
 
-
-
-
+## Authenticating reverse proxy for proxying trough authenticating proxy
+Don't forget to change the config file to connect to the right host.

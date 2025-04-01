@@ -3,9 +3,9 @@ version: '3'
 services:
   squid:
     image: ubuntu/squid:latest
-    container_name: squid-proxy
+    container_name: squid-reverse-proxy
     ports:
-      - "127.0.0.1:3128:3128"
+      - "127.0.0.1:8080:80"
     volumes:
       - ./config/config.conf:/etc/squid/squid.conf:Z
     restart: unless-stopped
